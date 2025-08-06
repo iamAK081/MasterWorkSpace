@@ -7,19 +7,15 @@ on:
     branches: [ "dev" ]
 
 jobs:
-  build:    
-
+  build:
     runs-on: windows-latest
 
     steps:
-    - name: Checkout-code
-    - uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
     - name: Setup MSBuild
-    - uses: microsoft/setup-msbuild@v1.1
+      uses: microsoft/setup-msbuild@v1.1
 
-    - name: build with msbuild
-    - run: msbuild "TestEx.vcxproj" /p:Configuration=Release
-
-
-   
+    - name: Build with MSBuild
+      run: msbuild "TestEx.vcxproj" /p:Configuration=Release
