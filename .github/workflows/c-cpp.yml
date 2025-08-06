@@ -18,4 +18,4 @@ jobs:
       uses: microsoft/setup-msbuild@v1.1
 
     - name: Build with MSBuild
-      run: msbuild "TestEx.vcxproj" /p:Configuration=Release
+      run: msbuild "TestEx.vcxproj" /p:Configuration=Debug
