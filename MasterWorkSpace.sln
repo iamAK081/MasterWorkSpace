@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MasterWorkSpace", "MasterWorkSpace.vcxproj", "{30F29CBC-3D2D-4B23-BB26-7A71CC117F29}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestEx", "..\TestEx\TestEx.vcxproj", "{41BBE3B9-D77D-41E8-89C4-77D8B77985C7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestEx", "TestEx\TestEx.vcxproj", "{41BBE3B9-D77D-41E8-89C4-77D8B77985C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
