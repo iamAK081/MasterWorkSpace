@@ -1,0 +1,25 @@
+name: Master Work Space CI
+
+on:
+  push:
+    branches: [ "dev" ]
+  pull_request:
+    branches: [ "dev" ]
+
+jobs:
+  build:    
+
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout-code
+    - uses: actions/checkout@v3
+
+    - name: Setup MSBuild
+    - uses: microsoft/setup-msbuild@v1.1
+
+    - name: build with msbuild
+    - run: msbuild "TestEx.vcxproj" /p:Configuration=Release
+
+
+   
